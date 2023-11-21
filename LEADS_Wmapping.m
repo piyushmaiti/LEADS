@@ -179,7 +179,7 @@ for v=1:size(listimgs,1)
   
     if isequal(tempmod,'MRI')
         tempdate=datetime(listimgs{v,1}(79:88));
-        else
+    else
         tempdate=datetime(listimgs{v,1}(76:85));
     end % end if condition what modality to grab date
 
