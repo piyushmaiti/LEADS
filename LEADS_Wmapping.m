@@ -169,7 +169,7 @@ listimgs=[dir('/mnt/coredata/Projects/LEADS/data_f7p1/processed/*/*/MRI*/s8iso*L
 listimgs = strcat({listimgs.folder}','/',{listimgs.name}');
 
 % testpurposes only
-listimgs = {'/mnt/coredata/Projects/LEADS/data_f7p1/processed/LDS9410525/Timepoint1/FDG_2022-11-30/wLDS9410525_FDG_2022-11-30_suvr_pons.nii'};
+listimgs = {'/mnt/coredata/Projects/LEADS/data_f7p1/processed/LDS0990416/Timepoint2/FDG_2022-12-20/wLDS0990416_FDG_2022-12-20_suvr_pons.nii'};
 
 for v=1:size(listimgs,1)
     
