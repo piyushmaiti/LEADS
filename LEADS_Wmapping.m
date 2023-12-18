@@ -164,12 +164,9 @@ elseif checkinfo==1
 end % end if condition there are no differences between old and new seg8 file lists
 
 fprintf(" --------- Wmapping --------- \n");
-% NOTE : Add the FDG for Whole Cerebellum 
+
 listimgs=[dir('/mnt/coredata/Projects/LEADS/data_f7p1/processed/*/*/MRI*/s8iso*LDS*nu.nii');dir('/mnt/coredata/Projects/LEADS/data_f7p1/processed/*/*/FBB*/wLDS*suvr_cbl.nii');dir('/mnt/coredata/Projects/LEADS/data_f7p1/processed/*/*/FTP*/wLDS*suvr_infcblg.nii');dir('/mnt/coredata/Projects/LEADS/data_f7p1/processed/*/*/FDG*/wLDS*suvr_pons.nii')]; % dir('/mnt/coredata/Projects/LEADS/data_f7p1/processed/*/*/FDG*/wLDS*suvr_wcbl.nii')];
 listimgs = strcat({listimgs.folder}','/',{listimgs.name}');
-
-% testpurposes only
-listimgs = {'/mnt/coredata/Projects/LEADS/data_f7p1/processed/LDS0990416/Timepoint2/FDG_2022-12-20/wLDS0990416_FDG_2022-12-20_suvr_pons.nii'};
 
 for v=1:size(listimgs,1)
     
